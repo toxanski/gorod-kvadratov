@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
+  
   class Timer {
     constructor(minutes, seconds) {
       this.myDate = new Date().setMinutes(minutes, seconds);
