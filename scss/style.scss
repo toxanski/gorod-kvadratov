@@ -1,0 +1,171 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$gray-color: #72757D;
+$blue-color: #4073FF;
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 26px 0 22px 0;
+  height: 90px;
+  border-bottom: 1px solid #ECECF0;
+  margin-bottom: 101px;
+
+  &__logo {
+    display: inline-block;
+  }
+  
+  &__text {
+    display: block;
+    float: right;
+    padding: 11px 0 13px 0;
+    color: $gray-color;
+  }
+}
+
+.title {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.button {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 23px;
+  padding: 18px 28px 13px 28px;
+  background-color: $blue-color;
+  color: #fff;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background-color: #2b57d0;
+    box-shadow: inset 0px 5px 5px #3b569e;
+  }
+}
+
+.timer {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 26px;
+  color: $blue-color;
+}
+
+.main {
+  .tech-work {
+    display: flex;
+    align-items: center;
+    margin-bottom: 130px;
+
+    .message {
+      
+      &__info {
+        margin-right: 84px;
+      }
+      &__title {
+        margin-bottom: 24px;
+      }
+      &__subtitle {
+        margin-bottom: 25px;
+      }
+      &__text {
+        margin-bottom: 25px;
+      }
+      &__subtext {
+        max-width: 450px;
+        line-height: 22px;
+      }
+
+      &__update {
+        margin-top: 48px;
+      }
+      .update {
+        &__button {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  border-top: 1px solid #ECECF0;
+  padding: 27px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social {
+    display: flex;
+
+    &-link {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: $blue-color;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 14px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-work {
+    justify-content: center;
+    &__image {
+      display: none;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    height: 140px;
+    margin-bottom: 50px;
+    .header__container {
+      display: flex;
+      flex-direction: column;
+      
+    }
+  }
+
+}
