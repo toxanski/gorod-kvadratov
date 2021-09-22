@@ -49,6 +49,18 @@ body {
   font-weight: 400;
 }
 
+.subtext {
+  color: #828282;
+}
+
+.text-underline {
+  border-bottom: 1px solid #35373B;
+}
+
+.text-primary {
+  font-weight: 700;
+}
+
 .button {
   border: none;
   border-radius: 6px;

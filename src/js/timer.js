@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const userTimerBlock = document.querySelector('.update__timer');
     const data = userTimerBlock.dataset.time;
     if (data) {
-      [newMinutes, newSeconds] = data.split(':');
+      let [newMinutes, newSeconds] = data.split(':');
       pageTimer.currentMin = +newMinutes;
       pageTimer.currentSec = +newSeconds;
     }
